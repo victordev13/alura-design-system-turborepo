@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import { Button } from './Button';
+import { Button } from '@victordev13/alfabit-button';
 
 const meta = {
   title: 'Example/Button',
@@ -10,8 +10,6 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  argTypes: {
-  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
 
@@ -21,26 +19,26 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     variant: 'primary',
-    label: 'Button',
+    children: 'Button',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    children: 'Button',
   },
 };
 
 export const Large: Story = {
   args: {
     size: 'lg',
-    label: 'Button',
+    children: 'Button',
   },
 };
 
 export const Small: Story = {
   args: {
     size: 'sm',
-    label: 'Button',
+    children: 'Button',
   },
 };
