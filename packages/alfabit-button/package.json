@@ -1,5 +1,5 @@
 {
-  "name": "@victordev13/alfabit-button",
+  "name": "@victorcsdev/alfabit-button",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
