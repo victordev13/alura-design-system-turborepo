@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import { Button } from '@victordev13/alfabit-button';
+import { Button } from '@victorcsdev/alfabit-button';
 
 const meta = {
   title: 'Example/Button',

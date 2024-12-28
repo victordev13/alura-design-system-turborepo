@@ -102,6 +102,9 @@ importers:
       '@types/styled-components':
         specifier: ^5.1.26
         version: 5.1.34
+      '@victorcsdev/alfabit-tokens':
+        specifier: workspace:*
+        version: link:../alfabit-tokens
       react:
         specifier: ^18.0.0
         version: 18.3.1

@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components';
 import { ButtonProps } from './Button';
 
+import { colors } from '@victorcsdev/alfabit-tokens'
+
 export const StyledButton = styled.button<ButtonProps>`
   display: flex;
   justify-content: center;
@@ -15,20 +17,20 @@ export const StyledButton = styled.button<ButtonProps>`
   ${({ variant }) =>
     variant === 'primary' &&
     css`
-      background: #5033C3;
-      color: #FFFFFF;
+      background: ${colors.blue.primary};
+      color: ${colors.white};
       border: none;
 
       &:hover {
-        background: #3D1EB3;
+        background: ${colors.blue.hover};
       }
 
       &:active {
-        background: #2E0F9E
+        background: ${colors.blue.click};
       }
 
       &:disabled {
-        background: #C3C3C3;
+        background: ${colors.gray.disabled};
         cursor: not-allowed;
       }
     `}
@@ -37,8 +39,8 @@ export const StyledButton = styled.button<ButtonProps>`
     variant === 'secondary' &&
     css`
       background: transparent;
-      color: #5033C3;
-      border: 2px solid #5033C3;
+      color: ${colors.blue.primary};
+      border: 2px solid ${colors.blue.primary};
 
       &:hover {
         background: #EDE9FF;
